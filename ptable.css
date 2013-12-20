@@ -1,0 +1,106 @@
+div.ele, div.blankele {
+    display: inline-block;
+    position: relative;
+    width: 4.5%;
+	border-radius: 5%;
+	border-style:solid;
+	border-width: 2px;
+	margin:1px;
+}
+
+div.ele_key
+{
+	width: 9%;
+	height: 3em;
+}
+
+div.blankele {
+	border-color: white;
+}
+
+div.ele>.dummy {
+    margin-top: 100%; /* 4:3 aspect ratio */
+}
+
+div.ele>.content {
+    position: absolute;
+	display: inline-block;
+	font-family: sans-serif;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+div.ele>.content.alkalis {
+    background-color: yellow
+}
+
+div.ele>.content.alkaline_earths {
+    background-color: orange
+}
+
+div.ele>.content.transistion_metals {
+    background-color: SteelBlue
+}
+
+div.ele>.content.basic_metals {
+    background-color: SlateGray
+}
+
+div.ele>.content.semimetals {
+    background-color: LightGray
+}
+
+div.ele>.content.nonmetals {
+    background-color: Khaki
+}
+
+div.ele>.content.halogens {
+    background-color: green
+}
+
+div.ele>.content.noble_gases {
+    background-color: MediumPurple
+}
+
+div.ele>.content.actinides {
+    background-color: Violet
+}
+
+div.ele>.content.lanthanides {
+    background-color: Thistle
+}
+
+div.ele>.content>.m {
+	position:absolute;
+	font-size: 0.7em;
+	top:0;
+	left:0;
+}
+
+div.ele>.content>.a {
+	position:absolute;
+	font-size: 0.7em;
+	bottom:0;
+	left:0;
+}
+
+/* Parent container for symbol div*/
+div.ele>.content>.symbol{
+	min-height: 100%;
+	min-width:100%;
+	display: table;
+}
+
+/*Holds symbol text in centre of symbol div */
+div.ele>.content>.symbol>.symboltext {
+	display: table-cell;
+	vertical-align: middle;
+	text-align:center;
+}
+
+div.row {
+	width:100%;
+	clear:both;
+}
