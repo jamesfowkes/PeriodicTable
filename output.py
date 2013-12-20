@@ -95,6 +95,8 @@ def printHeader():
     <html>
         <head>
             <link rel="stylesheet" href="ptable.css" type="text/css" />
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+            <script src="periodic.js"></script>
         </head>
         <body>
     """
