@@ -30,7 +30,9 @@ class Element:
         except KeyError:
             self.following_blanks = 0
         self.endofrow = a in endofrow
-    
+        
+        self._type = self.getType(self.a)
+        
     @property
     def mass(self):
         if (self.raw_mass > 0):
@@ -56,8 +58,12 @@ class Element:
 
     @property
     def type(self):
+        return self._type
+        
+    @staticmethod
+    def getType(a):
         for type, weights in types.iteritems():
-            if self.a in weights:
+            if a in weights:
                 return type
         
 def GetTypes():
